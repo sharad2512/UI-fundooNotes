@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundooNotes Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/SignUpPage.css">
+    <script src="../JS/signUpPage.js">
+      
+    </script>
+</head>
+
+<body>
+    <div class="signup-container">
+        <div class="child1">
+            <img src="../Assets/googleKeppLogo.png" alt="logo" width="100px" height="40px">
+            <h3>Create your FundooNotes account</h3>
+            <form  id="form-1" action="#" method="post">
+                <div class="name-container">
+                    <div class="FName">
+                        <input type="text" id="first_name" placeholder="First Name" >
+                        <div class="error1" id="first"></div></div>
+                    <div class="LName"> 
+                         <input type="text" id="last_name" placeholder="Last Name" >
+                        <div  class="error1" id="last"></div>
+                    </div>
+                    
+                </div>
+                <div class="email-container">
+                <input type="email" id="email" placeholder="example@gmail.com" >
+                <div  class="error1" id="emailErr"></div>
+                </div>
+                <div class="password-container">
+                    <div class="password">
+                        <input type="password" id="password" placeholder="Password" >
+                        <div  class="error1" id="pass"></div>
+                    </div>
+                    <div class="conf-password">
+                        <input type="password" id="password_confirm" placeholder="Confirm Password" >
+                        <div  class="error1" id="conf"></div>
+                    </div>
+                    
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p class="login-link">Already have an account? <a href="#">Log In</a></p>
+        </div>
+        <div class="child2">
+            <div class="child2_image">
+                <img src="../Assets/googleAccounts.jpeg" width="200px" height="130px">
+            </div>
+            <div class="child2_text">
+                  <p id = "text1" > One Account All of Google Working For You</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>
