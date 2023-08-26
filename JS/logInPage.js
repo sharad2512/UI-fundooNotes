@@ -10,9 +10,9 @@ window.onload = function () {
         } if (password === "") {
             document.getElementById('passErr').innerHTML = "password field is required"
         }
-        // if(!emailValidation(email)){
-        //     document.getElementById('emailErr').innerHTML = "enter currect email"
-        // }
+        if(!emailValidation(email)){
+            document.getElementById('emailErr').innerHTML = "enter currect email"
+        }
         let allData = {
             email: email,
             password: password
@@ -23,20 +23,21 @@ window.onload = function () {
             type: "POST",
             data: allData,
             success: function (result) {
-                console.log("Login Successfully")
+                alert("Log-in successfully")
                 console.log(result);
-                // let token = result.data;
-                // localStorage.setItem('token',token);
+                let token = result.token;
+                console.log(token)
+            localStorage.setItem("token" , token)
                 // window.location.href = 'http://127.0.0.1:5500/pages/dashboard.html'
             }
         })
     })
-    //   function  emailValidation (email){
-    //     let  emailRegex = /^[a-z]{3,}(.[0-9a-z])?@([a-z]){2,}.[a-z]$/;
-    //     // let passwordRegex = /^.(?=.{8,})(?=.[A-Z])(?=.[0-9])(?=.[@#$%^&+=]).*$/;
-    //    let validation = emailRegex.test(email)
-    //    console.log(validation)
-    // }
+      function  emailValidation (email){
+        let  emailRegex = /^[a-z]{3,}(.[0-9a-z])?@([a-z]){2,}.[a-z]$/;
+        // let passwordRegex = /^.(?=.{8,})(?=.[A-Z])(?=.[0-9])(?=.[@#$%^&+=]).*$/;
+       let validation = emailRegex.test(email)
+       console.log(validation)
+    }
 
 }
 

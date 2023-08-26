@@ -20,9 +20,9 @@ window.onload = function () {
             document.getElementById('conf').innerHTML = "confirm password field is required"
         }
         //email validation
-        // if(emailValidation(email)){
-        //     document.getElementById('emailErr').innerHTML = "enter currect email"
-        // }
+        if(emailValidation(email)){
+            document.getElementById('emailErr').innerHTML = "enter currect email"
+        }
 
         let allData = {
             name: firstName + " " + lastName,
@@ -32,18 +32,18 @@ window.onload = function () {
         }
         console.log(allData)
         
-        // function  emailValidation (email){
-        //     let  emailRegex = /^[a-z]{3,}(.[0-9a-z])?@([a-z]){2,}.[a-z]$/;
-        //     // let passwordRegex = /^.(?=.{8,})(?=.[A-Z])(?=.[0-9])(?=.[@#$%^&+=]).*$/;
-        //    let validation = emailRegex.test(email)
-        //    console.log(validation)
-        // }
+        function  emailValidation (email){
+            let  emailRegex = /^[a-z]{3,}(.[0-9a-z])?@([a-z]){2,}.[a-z]$/;
+            // let passwordRegex = /^.(?=.{8,})(?=.[A-Z])(?=.[0-9])(?=.[@#$%^&+=]).*$/;
+           let validation = emailRegex.test(email)
+           console.log(validation)
+        }
         $.ajax({
             url:"http://127.0.0.1:8000/api/user/signUp",
             type:"post",
             data:allData,
             success: function(result){
-                console.log("sign-up Successfully")
+                alert("sign-up Successfully")
                 console.log(result);
                 // let token = result.data;
                 // localStorage.setItem('token',token);

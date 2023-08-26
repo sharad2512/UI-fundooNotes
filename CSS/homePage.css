@@ -3,16 +3,24 @@
     height: 97vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     /* border: 2px solid black; */
  }
 .header-container{
-    height: 12%;
+    height: 10%;
     width: 100%;
     justify-content: space-between; 
 
      /* border:  2px solid greenyellow;  */
     display: flex;
     flex-direction: row;
+}
+#menuIcon{
+    margin-left: 20px;
+}
+#logo{
+    margin-left: 60px;
+    margin-top: 10px;
 }
  .left-container{
     align-items: center;
@@ -30,14 +38,14 @@
  .search-container {
     display: flex;
     width: 40%;
-    height: 100%;
+    height: 90%;
     background-color: rgb(197, 193, 193);
     flex-direction: row;
     /* margin: 10px; */
     /* padding: 5px; */
     /* border: 1px solid black; */
     border-radius: 5px;
-    background-color: #fff;
+    background-color: gray;
     /* max-width: 500px;  */
 } 
 .search-input {
@@ -46,10 +54,10 @@
     flex-grow: 1;
     border: none;
     width: 90%;
-    height: 70%;
-    border: 1px solid gray;
+    height: 75%;
+    border: 1px solid rgb(173, 172, 172);
     border-radius: 5px;
-    margin: 10px;
+    margin: 5px;
     font-size: 16px;
 }
  .right-container{
@@ -64,22 +72,22 @@
  
 #img1{
      /* position: relative; */
-     margin-top: 0px;
     /* left: 100px;  */
-    width: 20%;
+    width: 15%;
     height: 100%;
-    margin-left: 20px;
+    border-radius: 5px;
+    
  } 
  #loginIcon{
     height: 65%;
-    width: 16%;
+    width: 14%;
     /* height: 30px; */
     /* margin: 20px; */
     /* border: 2px solid red; */
     /* margin-top: 20px; */
     margin-left: 50px;
     margin-bottom: 40px;
-    margin-top: 10px;
+    margin-top: 13px;
  }
 
  #img2 , #refresh {
@@ -90,7 +98,7 @@
     margin: 10px;
     /* border: 2px solid red; */
     margin-top: 20px;
-    margin-left: 80px;
+    margin-left: 75px;
  }
 /* .search-continer input{
     border: 2px solid red;
@@ -109,90 +117,248 @@
 
 }
 .leftNavbar{
-    height: 100%;
-    width: 30%;
+    /* height: 100%; */
+    width: 20%;
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
 }
-.note1{
+.up{
+    height: 60%;
     width: 100%;
-    height: 20%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.down{
+    height: 50%;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.note1,.rem , .arc, .bin{
+    width: 80%;
+    height: 25%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* border: 2px solid rebeccapurple; */
-    /* justify-content: space-between; */
-}
-#noteIcon{
-   justify-content: flex-start;
+    align-items: center;
     /* border: 2px solid red; */
-    width: 15%;
-    margin: 35px;
-}
-#noteH{
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 80%;
-    /* border: 2px solid gray; */
-    
-    padding: 20px;
-}
-.rem , .arc, .bin{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* border: 2px solid rebeccapurple; */
-}
-#remiIcon  {
-    justify-content: flex-start;
-    /* border: 2px solid red; */
-    width: 15%;
-    margin: 35px; 
-}
-#remH  {
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 80%;
-    /* border: 2px solid gray; */
-    
-    padding: 20px;
-}
- #arciveIcon{
-    justify-content: flex-start;
-    /* border: 2px solid red; */
-    width: 15%;
-    margin: 35px; 
-}
-#archiveH{
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 80%;
-    /* border: 2px solid gray; */
-    
-    padding: 20px;
-}
 
-#binIcon{
-    justify-content: flex-start;
-    /* border: 2px solid red; */
-    width: 15%;
-    margin: 30px; 
 }
-#binH{
+#noteIcon,#remiIcon,#arciveIcon,#binIcon{
+    width: 15%;
+    height: 28%;
+
+}
+#arciveIcon{
+    /* width: 20%; */
+}
+#noteH,#binH, #remH,#archiveH{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin-left: 20px;
+    width: 75%;
+    /* border: 2px solid gray; */
+  /* margin-bottom: 20px; */
+  /* font-size: 18px; */
+    /* padding: 25px;
+    margin-bottom: 75px; */
+}
+/* .rem , .arc, .bin{
+    width: 80%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid rebeccapurple;
+    /* justify-content: space-between; */
+/* #remiIcon  {
+    border: 2px solid red;
+    width: 20%;
+    height: 20%;
+} */
+/* #remH  {
     align-items: flex-start;
     justify-content: flex-start;
-    width: 80%;
+    width: 90%; */
     /* border: 2px solid gray; */
-    margin-left: 10px;
-    padding: 20px;
-}
+  /* margin-bottom: 20px; */
+  /* font-size: 18px;
+    padding: 25px;
+    margin-bottom: 75px;
+} */
+ /* #arciveIcon{
+    border: 2px solid red;
+    width: 20%;
+    height: 20%;
+} */
+/* #archiveH{
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%; */
+    /* border: 2px solid gray; */
+  /* margin-bottom: 20px; */
+  /* font-size: 18px;
+    padding: 25px;
+    margin-bottom: 75px;
+} */
+
+/* #binIcon{
+    border: 2px solid red;
+    width: 20%;
+    height: 20%;
+} */
+/* #binH{
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%; */
+    /* border: 2px solid gray; */
+  /* margin-bottom: 20px; */
+  /* font-size: 18px;
+    padding: 25px;
+    margin-bottom: 75px;
+} */
 
 .note-container{
     height: 100%;
-    width: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     /* border: 2px solid green; */
 }
+.noteUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid rebeccapurple; */
+}
+#noteMain {
+    width: 65%;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    height: 20%;
+    box-shadow: 10px;
+    font-size: 17px;
+    color: grey;
+    background: linear-gradient(gray);
+    border: 2px solid grey;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.titel{
+    width: 65%;
+    height: 80%;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+#titel1{
+     width: 95%;
+     height: 20%;
+     border: none;
+     outline: none;
+     /* border: 2px solid grey; */
+     /* border-radius: 8px; */
+}
+#desc{
+    width: 95%;
+    height: 50%;
+    border: none;
+    border-style: none;
+    outline: none;
+    /* border: 2px solid grey; */
+    /* border-radius: 8px; */
+}
+.addNote{
+    display: flex;
+    justify-content: center;
+    height: 25%;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+.addNote button{
+    width: 15%;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+.showNote{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction:column; 
+    width: 20%;
+    height: 30%;
+    border: 2px solid ;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 180px;
+}
+#updiv{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 25%;
+    width: 100%;
+    /* border: 2px solid green; */
+    /* margin-bottom: 50px; */
+}
+
+#midDiv{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 40%;
+    width: 100%;
+    /* border: 2px solid green; */
+    /* margin-bottom: 50px; */
+}
+#midDivH{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+#upDivH{
+    font-size: 18px;
+    margin-left: 10px;
+}
+#botDiv{
+    display: flex;
+    flex-direction: row;
+    height:25%;
+    width:100% ;
+    /* border: 2px solid green; */
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+#showNoteArcIcon{
+
+}
+#showNoteDelIcon{
+
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
 

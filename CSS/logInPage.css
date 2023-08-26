@@ -126,3 +126,8 @@ body {
     justify-content: center;
     margin-left: 110px;
 }
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
