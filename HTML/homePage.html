@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-page</title>
+    <link rel="icon" href="../Assets/home page/home.jfif" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/homePage.css">
     <script src="../JS/Home Page/addNote.js"></script>
+    <script src="../JS/Home Page/appendData.js"></script>
+    <script src="../JS/Home Page/LogOut.js"></script>
+    <script src="../JS/Home Page/deleteNote.js"></script>
+    <script src="../JS/Home Page/archiveNote.js"></script>
     <!-- <script src="../JS/Home Page/appendData.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
@@ -16,8 +21,8 @@
     <div class="body-container">
         <header class="header-container ">
             <div class="left-container">
-                <img id="menuIcon" src="../Assets/home page/mainMenu.jfif" alt="main menu " width="50px" height="40px">
-                <img src="../Assets/home page/keep logo.jfif" alt="Keep " width="400px" height="200px">
+                <img id="menuIcon" src="../Assets/home page/mainMenu.jfif" alt="main menu " width="30px" height="25px">
+                <img id="keepLogo" src="../Assets/home page/keep logo.jfif" alt="Keep ">
             </div>
             <div class="search-container">
                 <img id="img1" src="../Assets/home page/search.jfif" alt="">
@@ -28,9 +33,14 @@
                 <img id="refresh" src="../Assets/home page/refresh.jfif" alt="">
                 <img id="img2" src="../Assets/home page/setting icon.jfif" alt="">
                 <img id="loginIcon" src="../Assets/home page/loginIcon.jfif" alt="">
+                <div class="dropdown-content" id="myDropdown">
+                    <!-- <a href="#">Profile</a> -->
+                    <a href="#" id="logoutOption">Log Out</a>
+                </div>
+
             </div>
         </header>
-        <hr style="border: 1px solid #6e6f72; margin: 10px 0;">
+
         <div class="main">
             <div class="leftNavbar">
                 <div class="up">
@@ -53,43 +63,21 @@
                 </div>
 
             </div>
-            <div class="note-container">
-                <div class="noteUp">
-                    <div id="noteMain"> Take a note....
+            <div id="note-container">
 
-                    </div>
 
-                    <div class="titel ">
-                        <input type="text" id="titel1" placeholder="Title">
-                        <textarea id="desc" placeholder="Description"></textarea>
-                        <!-- <input type="text"  placeholder="dec" > -->
-                        <div class="addNote">
-                            <button onclick="addNote()" type="submit">Add Note</button>
-                        </div>
-
+                <div class="titel ">
+                    <input type="text" id="titel1" placeholder="Title">
+                    <textarea id="desc" placeholder="Description"></textarea>
+                    <!-- <input type="text"  placeholder="dec" > -->
+                    <div class="addNote">
+                        <button onclick="addNote()" type="submit">Add Note</button>
                     </div>
 
                 </div>
-                <div class="showNote">
-                    <div id="updiv">
-                      <h2 id="upDivH">Title</h2>
-                    </div>
-                    <div id="midDiv">
-                        <h2 id="midDivH">Description</h2>
-                    </div>
-                  
-                    <!-- <div id="botDiv"> -->
-                        <a id="botDiv" href="imgClick">
-                            <img id="showNoteArcIcon" src="../Assets/home page/archive.jfif" alt=""> 
-                            <img id="showNoteDelIcon" src="../Assets/home page/delete.jfif" alt="">
-
-                        </a>
-
-                    <!-- </div> -->
+                <div id="newShowNote">
 
                 </div>
-
-
             </div>
         </div>
 

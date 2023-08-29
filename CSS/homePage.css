@@ -1,15 +1,19 @@
 .body-container{
-    width: 99vW;
+    width: 98vW;
     height: 97vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     /* border: 2px solid black; */
  }
 .header-container{
-    height: 10%;
-    width: 100%;
-    justify-content: space-between; 
+    height: 8%;
+    width: 98%;
+    margin-top: 10px;
+    justify-content: space-between;
+    border-bottom: 2px solid gray; 
+    margin-bottom: 20px;
+    padding: 10px;
 
      /* border:  2px solid greenyellow;  */
     display: flex;
@@ -28,19 +32,28 @@
     flex-direction: row;
     /* border: 2px solid red;  */
     height: 100%;
-    width: 30%;
+    width: 20%;
+    justify-content: space-between;
    
 } 
+#keepLogo{
+    /* width: 20%; */
+    height: 80%;
+   width: 50%;
+    /* border: 2px solid green; */
+}
 #h2{
     margin-left: 30px;
 }
 
  .search-container {
     display: flex;
-    width: 40%;
-    height: 90%;
+    width: 50%;
+    height: 75%;
     background-color: rgb(197, 193, 193);
     flex-direction: row;
+    margin-top: 10px;
+    margin-left: 150px;
     /* margin: 10px; */
     /* padding: 5px; */
     /* border: 1px solid black; */
@@ -57,13 +70,18 @@
     height: 75%;
     border: 1px solid rgb(173, 172, 172);
     border-radius: 5px;
-    margin: 5px;
+    /* margin: 6px; */
+    /* margin-bottom: 10px; */
+    margin-top: 3px;
+    margin-right: 4px;
     font-size: 16px;
 }
  .right-container{
-    height: 100%;
-    width: 30%; 
-    margin-left: 30px;
+    height: 90%;
+    width: 26%; 
+
+    /* margin: 20px; */
+    /* margin-left: 120px; */
     display: flex;
     flex-direction: row;
     /* justify-content: space-between; */
@@ -73,21 +91,23 @@
 #img1{
      /* position: relative; */
     /* left: 100px;  */
-    width: 15%;
-    height: 100%;
+    margin-top: 4px;
+    width: 8%;
+    height: 80%;
     border-radius: 5px;
     
  } 
  #loginIcon{
-    height: 65%;
-    width: 14%;
+    height: 57%;
+    width: 10%;
     /* height: 30px; */
     /* margin: 20px; */
     /* border: 2px solid red; */
     /* margin-top: 20px; */
-    margin-left: 50px;
-    margin-bottom: 40px;
-    margin-top: 13px;
+    margin-left: 45px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    cursor: pointer;
  }
 
  #img2 , #refresh {
@@ -97,8 +117,9 @@
     height: 25px;
     margin: 10px;
     /* border: 2px solid red; */
-    margin-top: 20px;
+    margin-top: 17px;
     margin-left: 75px;
+    cursor: pointer;
  }
 /* .search-continer input{
     border: 2px solid red;
@@ -111,7 +132,7 @@
 .main{
     /* border: 2px solid red; */
     width: 100%;
-    height: 84%;
+    height: 92%;
     display: flex;
     flex-direction: row;
 
@@ -143,23 +164,24 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     /* border: 2px solid red; */
 
 }
 #noteIcon,#remiIcon,#arciveIcon,#binIcon{
     width: 15%;
     height: 28%;
+    cursor: pointer;
 
 }
-#arciveIcon{
-    /* width: 20%; */
-}
+
 #noteH,#binH, #remH,#archiveH{
     display: flex;
     align-items: center;
     justify-content:flex-start;
     margin-left: 20px;
     width: 75%;
+    cursor: pointer;
     /* border: 2px solid gray; */
   /* margin-bottom: 20px; */
   /* font-size: 18px; */
@@ -221,42 +243,20 @@
     margin-bottom: 75px;
 } */
 
-.note-container{
-    height: 100%;
-    width: 100%;
+#note-container{
+    
+    width: 97%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
     /* border: 2px solid green; */
 }
-.noteUp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 50%;
-    /* border: 2px solid rebeccapurple; */
-}
-#noteMain {
-    width: 65%;
-    margin-top: 5px;
-    margin-bottom: 50px;
-    height: 20%;
-    box-shadow: 10px;
-    font-size: 17px;
-    color: grey;
-    background: linear-gradient(gray);
-    border: 2px solid grey;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
+
+
 .titel{
     width: 65%;
-    height: 80%;
+    height: 50%;
     border: 2px solid grey;
     display: flex;
     flex-direction: column;
@@ -266,7 +266,7 @@
 }
 #titel1{
      width: 95%;
-     height: 20%;
+     height: 130px;
      border: none;
      outline: none;
      /* border: 2px solid grey; */
@@ -293,19 +293,31 @@
     font-size: 14px;
     border-radius: 8px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 .showNote{
     display: flex;
     /* justify-content: center;
     align-items: center; */
     flex-direction:column; 
-    width: 20%;
-    height: 30%;
+    width: 200px;
+    height: 160px;
     border: 2px solid ;
     border: 2px solid grey;
     border-radius: 5px;
+    /* margin-top: 50px; */
+    /* margin: 60px; */
+    /* margin-left: 180px; */
+}
+#newShowNote{
+    width: 95%;
+    /* border: 2px solid red; */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
-    margin-left: 180px;
+    justify-content:flex-start;
+    gap: 5px;
 }
 #updiv{
     display: flex;
@@ -341,10 +353,12 @@
 #botDiv{
     display: flex;
     flex-direction: row;
-    height:25%;
+    height:15%;
+    /* margin: 30px; */
+    margin: auto;
     width:100% ;
     /* border: 2px solid green; */
-    justify-content: space-between;
+    justify-content: center;
     justify-content: space-around;
 }
 
@@ -359,6 +373,37 @@
         font-size: 16px;
     }
 }
+
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 75px;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    padding: 11px 13px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: black;
+}
+
 
 
 
